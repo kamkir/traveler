@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for wycieczki project
+# Scrapy settings for traveler-website-crawler project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,20 +9,20 @@
 #     https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'wycieczki'
+BOT_NAME = 'traveler-website-crawler'
 
-SPIDER_MODULES = ['wycieczki.spiders']
-NEWSPIDER_MODULE = 'wycieczki.spiders'
+SPIDER_MODULES = ['traveler-website-crawler.spiders']
+NEWSPIDER_MODULE = 'traveler-website-crawler.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'wycieczki (+http://www.yourdomain.com)'
+#USER_AGENT = 'traveler-website-crawler (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
-#CONCURRENT_REQUESTS = 32
+CONCURRENT_REQUESTS = 1
 
 # Configure a delay for requests for the same website (default: 0)
 # See https://doc.scrapy.org/en/latest/topics/settings.html#download-delay
@@ -47,13 +47,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'wycieczki.middlewares.WycieczkiSpiderMiddleware': 543,
+#    'traveler-website-crawler.middlewares.WycieczkiSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'wycieczki.middlewares.WycieczkiDownloaderMiddleware': 543,
+#    'traveler-website-crawler.middlewares.WycieczkiDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -65,7 +65,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    'wycieczki.pipelines.WycieczkiPipeline': 300,
+#    'traveler-website-crawler.pipelines.WycieczkiPipeline': 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
